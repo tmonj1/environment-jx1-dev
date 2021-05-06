@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: tmonj1
+  repo: jx1-aspnet5-app1
+  url: https://github.com/tmonj1/jx1-aspnet5-app1.git
+  version: ""
+  versionURL: ""
