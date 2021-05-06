@@ -1,0 +1,10 @@
+adminUser:
+  password: local:exciting-sculpture-1620262733/adminUser:password
+  username: admin
+enableDocker: false
+pipelineUser:
+  email: tmonj1@gmail.com
+  token: local:exciting-sculpture-1620262733/pipelineUser:token
+  username: tmonj1
+prow:
+  hmacToken: local:exciting-sculpture-1620262733/prow:hmacToken
