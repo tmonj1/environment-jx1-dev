@@ -1,0 +1,48 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: tmonj1
+    provider: github
+    repository: jx1-aspnet5-app1
+  managedFields:
+  - apiVersion: jenkins.io/v1
+    fieldsType: FieldsV1
+    fieldsV1:
+      f:metadata:
+        f:labels:
+          .: {}
+          f:owner: {}
+          f:provider: {}
+          f:repository: {}
+      f:spec:
+        .: {}
+        f:description: {}
+        f:httpCloneURL: {}
+        f:org: {}
+        f:provider: {}
+        f:providerKind: {}
+        f:providerName: {}
+        f:repo: {}
+        f:scheduler:
+          .: {}
+          f:kind: {}
+          f:name: {}
+        f:url: {}
+    manager: jx
+    operation: Update
+    time: "2021-05-06T09:43:33Z"
+  name: tmonj1-jx1-aspnet5-app1
+spec:
+  description: Imported application for tmonj1/jx1-aspnet5-app1
+  httpCloneURL: https://github.com/tmonj1/jx1-aspnet5-app1.git
+  org: tmonj1
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: jx1-aspnet5-app1
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/tmonj1/jx1-aspnet5-app1.git
