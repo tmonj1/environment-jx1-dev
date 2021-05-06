@@ -1,0 +1,45 @@
+
+Showing logs for build [32mtmonj1-environment-jx1-dev-pr-1-2lqhv-1[0m stage [32mpr-checks[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1620294277.1173985,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32mtmonj1-environment-jx1-dev-pr-1-2lqhv-1[0m stage [32mpr-checks[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32mtmonj1-environment-jx1-dev-pr-1-2lqhv-1[0m stage [32mpr-checks[0m and container [32mplace-tools[0m
+
+Showing logs for build [32mtmonj1-environment-jx1-dev-pr-1-2lqhv-1[0m stage [32mpr-checks[0m and container [32mstep-git-source-tmonj1-environment-jx1-dev-pr-1-2lqhv-krx7p[0m
+{"level":"info","ts":1620294286.8249347,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/******/environment-**1-dev.git @ master in path /workspace/source"}
+{"level":"warn","ts":1620294286.8250742,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1620294286.8578522,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+
+Showing logs for build [32mtmonj1-environment-jx1-dev-pr-1-2lqhv-1[0m stage [32mpr-checks[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mtmonj1-environment-jx1-dev-pr-1-2lqhv-1[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:ff909c9a75427a06345da2cbd44b80383cde93ad,1:ada9ea206305188c6f980b3a6ecf304367e5efdd
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow ada9ea206305188c6f980b3a6ecf304367e5efdd: ff909c9a75427a06345da2cbd44b80383cde93ad:
+DEBUG: ran git fetch --unshallow origin ada9ea206305188c6f980b3a6ecf304367e5efdd: ff909c9a75427a06345da2cbd44b80383cde93ad: in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git branch
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard ff909c9a75427a06345da2cbd44b80383cde93ad
+DEBUG: ran git reset --hard ff909c9a75427a06345da2cbd44b80383cde93ad in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge ada9ea206305188c6f980b3a6ecf304367e5efdd
+DEBUG: ran git merge ada9ea206305188c6f980b3a6ecf304367e5efdd in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e ff909c9a75427a06345da2cbd44b80383cde93ad..HEAD
+Merged SHA ada9ea206305188c6f980b3a6ecf304367e5efdd with commit message 'chore(deps): bump https://github.com/******/**1-aspnet5-app1.git' into base branch master
+
+Showing logs for build [32mtmonj1-environment-jx1-dev-pr-1-2lqhv-1[0m stage [32mpr-checks[0m and container [32mstep-verify-parameters[0m
+error: resolve the secrets URIs: replacing secrets URIs: replacing vault paths in *****User:
+  password: local:exciting-sculpture-1620262733/*****User:password
+  username: *****
+enableDocker: false
+pipelineUser:
+  email: ******@gmail.com
+  token: local:exciting-sculpture-1620262733/pipelineUser:token
+  username: ******
+prow:
+  hmacToken: local:exciting-sculpture-1620262733/prow:hmacToken
+: unable to find "password" in secret at "exciting-sculpture-1620262733/*****User"
+[31m
+Pipeline failed on stage 'pr-checks' : container 'step-verify-parameters'. The execution of the pipeline has stopped.[0m
